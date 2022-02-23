@@ -6,8 +6,10 @@
         <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/activity_part_list.xml" value="0.4787037037037037" />
-        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/activity_product_list.xml" value="0.4787037037037037" />
+        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/activity_part_list.xml" value="0.33" />
+        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/activity_product_list.xml" value="0.33" />
+        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/part_list_item.xml" value="0.41846153846153844" />
+        <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/layout/product_list_item.xml" value="0.4517948717948718" />
         <entry key="..\:/Users/Aje/Documents/School/C196- Mobile Application Development/BikeShopApp/app/src/main/res/menu/menu_productlist.xml" value="0.4787037037037037" />
       </map>
     </option>

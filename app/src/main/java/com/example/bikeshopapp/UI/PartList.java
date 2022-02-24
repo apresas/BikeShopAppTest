@@ -3,6 +3,7 @@ package com.example.bikeshopapp.UI;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -41,10 +42,14 @@ public class PartList extends AppCompatActivity {
             int newID = repository.getAllProducts().get(repository.getAllProducts().size() -1).getProductID() + 1;
             product = new Product(newID, editName.getText().toString(), Double.parseDouble(editPrice.getText().toString()));
             repository.insert(product);
-            Toast.makeText(PartList.this, "Product Saved", Toast.LENGTH_SHORT).show();
         } else {
             product = new Product(productID, editName.getText().toString(), Double.parseDouble(editPrice.getText().toString()));
             repository.update(product);
         }
+    }
+
+    public void goToPartsDetails(View view) {
+        Intent intent = new Intent(PartList.this, PartDetails.class);
+        startActivity(intent);
     }
 }

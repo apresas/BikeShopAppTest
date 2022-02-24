@@ -17,7 +17,7 @@ import com.example.bikeshopapp.Entity.Product;
 import com.example.bikeshopapp.R;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static int numAlert;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

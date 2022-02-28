@@ -1,5 +1,6 @@
 package com.example.bikeshopapp.DAO;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -24,5 +25,5 @@ public interface PartDAO {
     void delete (Part part);
 
     @Query("SELECT * FROM parts ORDER BY partID ASC")
-    List<Part> getAllParts();
+    LiveData<List<Part>> getAllParts();
 }

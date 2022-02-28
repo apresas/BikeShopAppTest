@@ -2,6 +2,8 @@ package com.example.bikeshopapp.Database;
 
 import android.app.Application;
 
+import androidx.lifecycle.LiveData;
+
 import com.example.bikeshopapp.DAO.PartDAO;
 import com.example.bikeshopapp.DAO.ProductDAO;
 import com.example.bikeshopapp.Entity.Part;
@@ -15,7 +17,7 @@ public class Repository {
     private PartDAO partDAO;
     private ProductDAO productDAO;
     private List<Product> allProducts;
-    private List<Part> allParts;
+    private LiveData<List<Part>> allParts;
 
     private static  int NUMBER_OF_THREADS=4;
     static final ExecutorService databaseExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
@@ -71,7 +73,7 @@ public class Repository {
     }
 
     // Part
-    public List<Part>getAllParts(){
+    public LiveData<List<Part>>getAllParts(){
         databaseExecutor.execute(()->{
             allParts = partDAO.getAllParts();
         });

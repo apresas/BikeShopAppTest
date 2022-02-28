@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey;
 public class Part {
     @PrimaryKey(autoGenerate = true)
     private int partID;
-
     private String partName;
     private double price;
     private int productID;
